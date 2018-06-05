@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="description" content="Formation Webpack"/>
+    <meta name="keywords"
+          content="formation webpack"/>
+    <link rel="canonical" href="http://codox.fr/formation-webpack"/>
+    <title>Formation Webapck</title>
+    <link href="https://google.com/+JeanBaptisteCazaux" rel="publisher"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <style type="text/css">
+        p {
+            text-align: left;
+        }
+
+        .fragment.current-visible.visible:not(.current-fragment) {
+            display: none;
+            height: 0px;
+            line-height: 0px;
+            font-size: 0px;
+        }
+
+        .reveal h3, .reveal h4 {
+            text-transform: none;
+        }
+
+        .reveal pre code {
+            max-height: 530px;
+        }
+    </style>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section>
+            <h1><img width="150" height="150" data-src="images/webpack.png" alt="webpack"
+                     style="border: none; background: none; box-shadow: none; margin: 0 0 -40px 0;">Webpack</h1>
+            <p style="text-align: center"><a target="_blank" href="http://twitter.com/jbcazaux">@jbcazaux</a></p>
+            </p>
+        </section>
+        <section>
+            <h2>Pourquoi Webpack ?</h2>
+            <ul>
+                <li class="fragment">Transpilation (es6, es7, jsx, ...)</li>
+                <li class="fragment">Optimisations</li>
+                <li class="fragment">Développement (hot reloading, history, ...)</li>
+            </ul>
+        </section>
+        <section>
+            <h3>Let's do it !</h3>
+
+            <h3>help ? <a href="mailto:jbcazaux@gmail.com">jbcazaux@gmail.com</a></h3>
+        </section>
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
+</body>
+</html>
