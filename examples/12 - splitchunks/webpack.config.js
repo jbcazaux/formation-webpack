@@ -6,19 +6,19 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 
 module.exports = (env, argv) => ({
   entry: {
-    main: ['./src/main.js']
+    add: ['./src/add.js',],
+    sub: ['./src/sub.js']
   },
   output: {
     path: path.resolve(__dirname, 'build'),
-    chunkFilename: '[name].js',
     filename: '[name].js',
-    publicPath: ''
+    publicPath: '/'
   },
   resolve: { extensions: ['.js'] },
   optimization: {
     splitChunks: {
       chunks: 'all',
-      minSize: 30000
+      minSize: 0 // par defaut 30k, afin d eviter un appel reseau supplementaire. duplication vs latence reseau
     }
   },
   module: {
