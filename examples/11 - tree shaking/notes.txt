@@ -1,0 +1,3 @@
+Utiliser le uglifyjs plugin a la main en mode dev, puis expliquer qu en prod il est activé par défaut.
+Tree shaking avec imports non utilisés, puis avec analyse statique du code (process.env.NODE_ENV et 1 + 1 === 3)
+Expliquer la difference entre es6 modules et commonjs. TODO: Quels sont les impacts d utiliser les modules ES6 ?

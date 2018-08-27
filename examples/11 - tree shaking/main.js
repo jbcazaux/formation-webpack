@@ -1,15 +1,11 @@
-import Calc from './calc';
-import anna from '../public/anna.jpeg';
-import elsa from '../public/elsa.jpeg';
-import {addImage} from './images';
-const calc = new Calc();
+import { add } from './math';
 
-console.log('3 + 2 =', calc.add(3, 2));
+console.log('4 + 2 = ', add(4, 2));
 
-// addImage(elsa, document.getElementsByTagName('body')[0]);
-addImage(anna, document.getElementsByTagName('body')[0]);
+if (process.env.NODE_ENV !== 'production'){
+  console.log('you should not see this');
+}
 
-if (process.env.NODE_ENV !== 'production') {
-  addImage(elsa, document.getElementsByTagName('body')[0]);
-  console.log('jbc');
+if (1 + 1 === 3){
+  console.log('you should not see this either');
 }

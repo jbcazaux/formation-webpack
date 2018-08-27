@@ -1,4 +1,5 @@
 {
   "plugins": ["@babel/plugin-proposal-class-properties", "@babel/plugin-syntax-dynamic-import"],
-  "presets": ["@babel/env"]
+  "presets": [[ "@babel/preset-env", { "modules": false } ]],
+  "sourceType": "module"
 }

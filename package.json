@@ -4,6 +4,7 @@
   "description": "Formation Webpack",
   "author": "jbcazaux",
   "license": "MIT",
+  "sideEffects": false,
   "scripts": {
     "development": "webpack --mode=development --config ./src/webpack.config.js",
     "build:dev": "webpack --mode development",
@@ -12,21 +13,21 @@
     "analyse": "webpack --mode production --analyse"
   },
   "devDependencies": {
-    "@babel/core": "7.0.0-rc.1",
-    "@babel/plugin-proposal-class-properties": "7.0.0-rc.1",
+    "@babel/core": "7.0.0-rc.3",
+    "@babel/plugin-proposal-class-properties": "7.0.0-rc.3",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0-rc.2",
-    "@babel/preset-env": "7.0.0-rc.1",
-    "babel-loader": "8.0.0-beta.3",
+    "@babel/preset-env": "7.0.0-rc.3",
+    "babel-loader": "8.0.0-beta.4",
     "clean-webpack-plugin": "0.1.19",
     "css-loader": "1.0.0",
     "extract-text-webpack-plugin": "4.0.0-beta.0",
-    "file-loader": "1.1.11",
+    "file-loader": "2.0.0",
     "html-webpack-plugin": "3.2.0",
     "style-loader": "0.22.1",
-    "webpack": "4.17.0",
+    "webpack": "4.17.1",
     "webpack-bundle-analyzer": "2.13.1",
     "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.5"
+    "webpack-dev-server": "3.1.6"
   },
   "dependencies": {}
 }
