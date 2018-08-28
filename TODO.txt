@@ -1,0 +1,4 @@
+- creuser rollup pour faire une partie webpack vs rollup
+- faire un TP avec le bundle analyzer (tree shaking lodash (ou ramda) ? ) // test import barrel
+- faire un TP avec typescript
+- faire un TP sass
