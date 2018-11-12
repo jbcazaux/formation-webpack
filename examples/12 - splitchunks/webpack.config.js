@@ -18,7 +18,7 @@ module.exports = (env, argv) => ({
   optimization: {
     splitChunks: {
       chunks: 'all',
-      minSize: 0 // par defaut 30k, afin d eviter un appel reseau supplementaire. duplication vs latence reseau
+      minSize: 0 // par defaut 30k, afin d éviter un appel réseau supplémentaire. duplication vs latence réseau
     }
   },
   module: {
