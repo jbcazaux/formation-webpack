@@ -11,6 +11,7 @@ todo -> revoir les imports
 
 slide 4:
 babel loader: (03)
+todo -> webpack pas a la bonne place (a la racine !)
 
 slide 5: 
 babel preset + plugins (04)
@@ -21,4 +22,8 @@ slide 6: (05)
 todo -> donner des exemples de plugins
 
 slide 7: (06)
+-> on peut servir des ressources statiques
+-> voir les sources... pas de sourmap, c'est illisible !
 
+slide 8: (07)
+-> ouvrir avec yarn start -> on voir les sources

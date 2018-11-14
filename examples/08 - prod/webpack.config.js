@@ -7,7 +7,7 @@ module.exports = (env, argv) => ({
     bundle: './src/main.js'
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, '../', 'build'),
     filename: '[name].js',
     publicPath: '/'
   },
@@ -35,13 +35,8 @@ module.exports = (env, argv) => ({
       filename: 'index.html',
       favicon: './src/favicon.ico'
     }),
-    new CleanWebpackPlugin(['build'], {verbose: true}) // clean repertoire build
+    new CleanWebpackPlugin(['build'], {verbose: true})
   ],
-  devServer: {
-    contentBase: path.resolve(__dirname, 'public'), // si on veut acceder a des ressources non webpack
-    publicPath: '/',
-    open: true
-  },
   devtool: argv.mode === 'development' ? 'source-map' : false
 });
 

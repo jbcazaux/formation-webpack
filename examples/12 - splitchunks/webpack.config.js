@@ -10,7 +10,7 @@ module.exports = (env, argv) => ({
     sub: ['./src/sub.js']
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, '../', 'build'),
     filename: '[name].js',
     publicPath: '/'
   },
