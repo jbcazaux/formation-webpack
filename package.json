@@ -6,10 +6,10 @@
   "license": "MIT",
   "sideEffects": false,
   "scripts": {
-    "development": "webpack --mode=development --config ./src/webpack.config.js",
+    "build": "webpack --mode=development --config ./src/webpack.config.js",
     "build:dev": "webpack --mode development",
     "build:prod": "webpack --mode production",
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --mode development --config ./src/webpack.config.js",
     "analyse": "webpack --mode production --analyse"
   },
   "devDependencies": {

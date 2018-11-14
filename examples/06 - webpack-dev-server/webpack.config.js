@@ -29,9 +29,8 @@ module.exports = {
     new CleanWebpackPlugin(['build'], {verbose: true}) // clean repertoire build
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'), // si on veut acceder a des ressources non webpack (favico ?)
-    publicPath: '/',
+    contentBase: path.resolve(__dirname,'../', 'public'), // si on veut acceder à des ressources non webpack (favico ?)
     open: true
   },
-  devtool: 'source-map'
+  devtool: 'source-map' // avoir les sources en debug
 };
