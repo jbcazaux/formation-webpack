@@ -43,4 +43,8 @@ slide 10: (09)
 -> il faut imaginer les fichier js comme des composants react (par exemple)
 
 slide 11: (10)
--> lancer en mode analyser (et prod !)
+-> lancer en mode analyse -- yarn analyse
+-> voir que lodash est très lourd par rapport a src
+todo -> ajouter un autre package ? voir lequel
+
+slide 12: (11)
