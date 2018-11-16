@@ -1,6 +1,10 @@
-slide 1:
+slide 0:
 webpack 4
 jb cazaux
+
+slide 1:
+- Les nouveautés de webpack 4 (mode)
+- TODO 
 
 slide 2:
 ce qui fonctionne dans le navigateur (01)
@@ -26,4 +30,17 @@ slide 7: (06)
 -> voir les sources... pas de sourmap, c'est illisible !
 
 slide 8: (07)
--> ouvrir avec yarn start -> on voir les sources
+-> ouvrir avec yarn start -> on voit les sources
+
+slide 9: (08)
+-> import des images en js, on les voit dans le bundle
+-> ecriture du webpack.conf.js avec une fonction pour récupérer le mode
+
+slide 10: (09)
+-> file loader
+-> css loader (extract text plugin)
+-> lancer en mode production
+-> il faut imaginer les fichier js comme des composants react (par exemple)
+
+slide 11: (10)
+-> lancer en mode analyser (et prod !)

@@ -21,7 +21,7 @@ module.exports = (env, argv) => ({
         loader: 'babel-loader'
       },
       {
-        test: /\.(png|jpe?g|gif)$/,
+        test: /\.(png|jpe?g|gif)$/, // chargement des fichiers
         use: [
         {
           loader: 'file-loader',
@@ -53,14 +53,8 @@ module.exports = (env, argv) => ({
       filename: 'index.html',
       favicon: './src/favicon.ico'
     }),
-    new CleanWebpackPlugin(['build'], {verbose: true}), // clean repertoire build
-    new ExtractTextPlugin({ filename: 'calc.css' }),
+    new CleanWebpackPlugin(['build'], {verbose: true}),
+    new ExtractTextPlugin({ filename: 'style.css' }),
   ],
-  devServer: {
-    contentBase: path.resolve(__dirname, 'public'), // si on veut acceder a des ressources non webpack
-    publicPath: '/',
-    open: true
-  },
   devtool: argv.mode === 'development' ? 'source-map' : false
 });
-

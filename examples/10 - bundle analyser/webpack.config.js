@@ -54,12 +54,11 @@ module.exports = (env, argv) => ({
       filename: 'index.html',
       favicon: './src/favicon.ico'
     }),
-    new CleanWebpackPlugin(['build'], {verbose: true}), // clean repertoire build
+    new CleanWebpackPlugin(['build'], {verbose: true}),
     new ExtractTextPlugin({ filename: 'calc.css' }),
   ].concat(argv.analyse ? new BundleAnalyzerPlugin() : []),
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'), // si on veut acceder a des ressources non webpack
-    publicPath: '/',
+    contentBase: path.resolve(__dirname,'../', 'public'), // si on veut acceder à des ressources non webpack (favico ?)
     open: true
   },
   devtool: argv.mode === 'development' ? 'source-map' : false

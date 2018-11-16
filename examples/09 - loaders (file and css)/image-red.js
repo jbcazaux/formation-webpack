@@ -1,4 +1,4 @@
-import style from './images.css';
+import style from './image-red.css';
 
 export const addImage = (src, element) => {
 
