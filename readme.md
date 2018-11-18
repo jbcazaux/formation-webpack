@@ -48,3 +48,12 @@ slide 11: (10)
 todo -> ajouter un autre package ? voir lequel
 
 slide 12: (11)
+-> minimize: 
+.montrer l'analyse du code qui permet de supprimer des sources
+.activer le mode minimize en dev => ligne 107 le 1+1 === 3 a été remplacé
+.add/sub chercher - et + dans les sources
+.lancer analyse
+.importer lodash/fill plutot que lodash, il existe un plugin pour faire ca
+.relancer analyse
+
+slide 13: (12)

@@ -15,13 +15,7 @@ module.exports = (env, argv) => ({
   },
   resolve: { extensions: ['.js'] },
   optimization: {
-    splitChunks: {
-      chunks: 'all',
-      minSize: 30000
-    },
-    minimize: true,
-    usedExports: true,
-    sideEffects: true
+    // minimize: true, // true en prod par défaut !
   },
   module: {
     rules: [
@@ -47,13 +41,12 @@ module.exports = (env, argv) => ({
       filename: 'index.html',
       favicon: './src/favicon.ico'
     }),
-    new CleanWebpackPlugin(['build'], { verbose: true }), // clean repertoire build
+    new CleanWebpackPlugin(['build'], { verbose: true }),
   ].concat(argv.analyse ? new BundleAnalyzerPlugin() : []),
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'), // si on veut acceder a des ressources non webpack
+    contentBase: path.resolve(__dirname, 'public'),
     publicPath: '/',
     open: true
   },
   devtool: argv.mode === 'development' ? 'source-map' : false
 });
-

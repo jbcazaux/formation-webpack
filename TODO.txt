@@ -4,4 +4,5 @@
 - faire un TP sass / less
 - montrer react lazy avec webpack
 - babel js config
+- faire le parallele avec doctolib
 
