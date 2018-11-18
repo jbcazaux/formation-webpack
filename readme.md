@@ -57,3 +57,7 @@ slide 12: (11)
 .relancer analyse
 
 slide 13: (12)
+-> Pour découper le code on peut utiliser les entry points ou les imports dynamiques
+-> duplication de code si 2 modules dépendent d'une meme lib
+-> SplitChunksPlugin pour créer des common chunks
+
