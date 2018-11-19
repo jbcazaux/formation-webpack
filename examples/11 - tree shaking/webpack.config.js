@@ -1,6 +1,5 @@
 const path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -15,6 +14,7 @@ module.exports = (env, argv) => ({
   },
   resolve: { extensions: ['.js'] },
   optimization: {
+    usedExports: true, // detect used and unused exports
     // minimize: true, // true en prod par défaut !
   },
   module: {
@@ -23,16 +23,7 @@ module.exports = (env, argv) => ({
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: { name: "[name]-[hash].[ext]" }
-          }
-        ]
-      },
+      }
     ],
   },
   plugins: [

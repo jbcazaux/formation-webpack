@@ -48,16 +48,23 @@ slide 11: (10)
 todo -> ajouter un autre package ? voir lequel
 
 slide 12: (11)
--> minimize: 
-.montrer l'analyse du code qui permet de supprimer des sources
-.activer le mode minimize en dev => ligne 107 le 1+1 === 3 a été remplacé
-.add/sub chercher - et + dans les sources
-.lancer analyse
-.importer lodash/fill plutot que lodash, il existe un plugin pour faire ca
-.relancer analyse
+-> optimize: 
+.lancer en dev: avec le usedExports
+    .voir le sub dans le code + harmony unused
+    .le 1+1 === 3 a été remplacé
+.en minimize = true
+    .le sub a été supprimé
+    .le if (false) aussi
+.import lodash
+    .lancer analyse
+    .importer lodash/fill plutot que lodash, il existe un plugin pour faire ca
+    .relancer analyse
 
 slide 13: (12)
 -> Pour découper le code on peut utiliser les entry points ou les imports dynamiques
 -> duplication de code si 2 modules dépendent d'une meme lib
 -> SplitChunksPlugin pour créer des common chunks
 
+slide 14: (13)
+-> imports dynamiques
+-> prefetch
