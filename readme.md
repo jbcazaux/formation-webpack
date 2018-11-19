@@ -61,10 +61,17 @@ slide 12: (11)
     .relancer analyse
 
 slide 13: (12)
+-> cas sites avec plusieurs parties (premium et free ?) ils ont des dependances en commun
 -> Pour découper le code on peut utiliser les entry points ou les imports dynamiques
 -> duplication de code si 2 modules dépendent d'une meme lib
+    -> montrer la duplication de code dans add et sub (en build dev)
+    -> activer le plugin
 -> SplitChunksPlugin pour créer des common chunks
 
 slide 14: (13)
 -> imports dynamiques
 -> prefetch
+
+slide 15: (14)
+-> chargement au dernier moment
+-> react peut prefetcher (vs webpack ?)
