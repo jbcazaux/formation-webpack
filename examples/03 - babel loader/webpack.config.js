@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   entry: {
     bundle: './src/main.js' // point d'entrée JS
+    // vendor: ['react', 'react-router', ...], // N'est plus utilisé
   },
   output: {
     path: path.resolve(__dirname, '../', 'build'), // répertoire de sortie, ../ car dans /src

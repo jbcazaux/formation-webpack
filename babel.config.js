@@ -1,10 +1,11 @@
 module.exports = api => {
     api.cache(false)
     return {
-        plugins: ['@babel/plugin-proposal-class-properties', '@babel/plugin-syntax-dynamic-import'],
+        // plugins: ['@babel/plugin-proposal-class-properties'],
+        // '@babel/plugin-syntax-dynamic-import'],
         presets: [
-          ['@babel/preset-env', {modules: false}],
-          ["@babel/preset-react"]
+         // ['@babel/preset-env'],
+         // ["@babel/preset-react"]
         ],
 
         /* "module" - Parse the file using the ECMAScript Module grammar.
