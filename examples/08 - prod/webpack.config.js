@@ -11,7 +11,6 @@ module.exports = (env, argv) => ({
     filename: '[name].js',
     publicPath: '/'
   },
-  resolve: {extensions: ['.js']},
   module: {
     rules: [
       {
@@ -19,14 +18,6 @@ module.exports = (env, argv) => ({
         exclude: /node_modules/,
         loader: 'babel-loader'
       },
-      {
-        test: /\.(png|jpe?g|gif)$/,
-        use: [
-        {
-          loader: 'file-loader',
-          options: {name: "[name]-[hash].[ext]"}
-        }
-      ]}
     ],
   },
   plugins: [

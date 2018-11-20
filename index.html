@@ -59,6 +59,7 @@
         <section>
             <h2>Pourquoi Webpack ?</h2>
             <ul>
+                <li>Webpack fait beaucoup (trop ?) de choses</li>
                 <li class="fragment">Transpilation (es6, es7, jsx, ...) avec babel</li>
                 <li class="fragment">Optimisations (WebPerfs)</li>
                 <li class="fragment">Facilités de développement (hot reloading, history, ...)</li>
@@ -96,11 +97,104 @@
 
         </section>
         <section>
-            <h2>Pourquoi Webpack ?</h2>
+            <h2>Babel - configuration</h2>
+
+            <ul>
+                <li>plugins</li>
+                <li>presets (réduire la conf)</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Plugins Webpack</h2>
+
+            <p>Par exemple les <i>HtmlWebPackPlugin</i>, <i>CleanWebpackPlugin</i>, <i>BundleAnalyzerPlugin</i>, ...</p>
+            <p><a target="_blank" href="./examples/05%20-%20webpack%20plugin/webpack.config.js">webpack.config.js</a></p>
 
         </section>
         <section>
-            <h2>Pourquoi Webpack ?</h2>
+            <h2>Webpack-dev-server</h2>
+
+            <ul>
+                <li>Rechargement à chaud</li>
+                <li>Ressources statiques</li>
+                <li><i>historyApiFallback</i> pour les SPA</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>source map</h2>
+
+            <ul>
+                <li><a target="_blank" href="https://webpack.js.org/configuration/devtool/">devtool</a></li>
+                <li><a target="_blank" href="https://webpack.js.org/plugins/source-map-dev-tool-plugin/">SourceMapDevToolPlugin</a></li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>mode</h2>
+
+            <ul>
+                <li>webpack --production</li>
+                <li>webpack --development</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>other loaders</h2>
+
+            <ul>
+                <li>style, css</li>
+                <li>file</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>analyse</h2>
+
+            <ul>
+                <li>Webpack Bundle Analyzer</li>
+                <li>stats</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>optimize</h2>
+
+            <ul>
+                <li>usedExports</li>
+                <li>minimize</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>optimize</h2>
+
+            <ul>
+                <li>SplitChunksPlugin</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>optimize</h2>
+
+            <ul>
+                <li>dynamic imports</li>
+                <li>prefetch & preload</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>react-lazy</h2>
+
+            <ul>
+                <li>react-lazy</li>
+                <li>suspense</li>
+                <li>concurent</li>
+            </ul>
+
+        </section>
+        <section>
+            <h2>What about our code ?</h2>
 
         </section>
         <section>

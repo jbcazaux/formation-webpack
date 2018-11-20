@@ -29,7 +29,7 @@ module.exports = {
     new CleanWebpackPlugin(['../build'], {verbose: true}) // clean repertoire build
   ],
   devServer: {
-    contentBase: path.resolve(__dirname,'../', 'public'), // si on veut acceder à des ressources non webpack (favico ?)
+    contentBase: path.resolve(__dirname,'../', 'public'), // si on veut acceder à des ressources non webpack
     open: true
   }
 };

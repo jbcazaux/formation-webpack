@@ -33,5 +33,5 @@ module.exports = {
     publicPath: '/',
     open: true
   },
-  devtool: 'source-map' // les sources map !
+  // devtool: 'source-map' // les sources map !
 };
